@@ -83,9 +83,9 @@ public class HandTest {
 		
 		// TODO:  REMOVE THE COMMENTS FROM THE NEXT THREE LINES
 		
-		cards.add(new Card(eSuit.CLUBS,eRank.TWO));
-		cards.add(new Card(eSuit.CLUBS,eRank.THREE));
-		cards.add(new Card(eSuit.CLUBS,eRank.FOUR));
+		cards.add(new Card(eRank.TWO, eSuit.CLUBS));
+		cards.add(new Card(eRank.THREE,eSuit.CLUBS));
+		cards.add(new Card(eRank.FOUR, eSuit.CLUBS));
 		
 		int[] score = HandHelper(cards);
 		
