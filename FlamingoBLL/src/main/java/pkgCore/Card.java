@@ -12,7 +12,8 @@ public class Card implements Comparable {
 	
 	public Card(eRank eRank, eSuit eSuit) {	
 	}
-	
+	public Card(eSuit eSuit, eRank eRank) {	
+	}
 	//	TODO: Add a public 'getter' method for eRank and eSuit.  
 	//			Add a private 'setter' method for eRank and eSuit
 	

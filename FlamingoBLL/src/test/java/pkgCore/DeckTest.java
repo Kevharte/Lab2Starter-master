@@ -10,9 +10,9 @@ public class DeckTest {
 	public void TestDeck() {
 		
 		Deck test_a = new Deck();
-		test_a.Deck(1);
+		test_a.deck(1);
 		Deck test_b = new Deck();
-		test_b.Deck(6);
+		test_b.deck(6);
 		assertEquals(test_a.getSize(), 52);
 		assertEquals(test_b.getSize(), 312);
 		//	TODO: Build a deck(1), make sure there are 52 cards in the deck

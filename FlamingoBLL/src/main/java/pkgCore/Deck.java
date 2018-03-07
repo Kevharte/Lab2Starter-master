@@ -18,7 +18,7 @@ public class Deck {
 	
 	//			Deck(2) will create an array of 104 cards.
 	
-	public void Deck(int num_of_decks) {
+	public void deck(int num_of_decks) {
 		for(;num_of_decks > 0; num_of_decks--) {
 			Card AoS = new Card(eRank.ACE, eSuit.SPADES);
 			cards.add(AoS);
