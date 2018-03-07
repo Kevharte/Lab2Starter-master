@@ -20,7 +20,7 @@ public class Card implements Comparable {
 		return eRank;
 	}
 
-	public void seteRank(eRank rank) {
+	private void seteRank(eRank rank) {
 		this.eRank = rank;
 	}
 
@@ -28,7 +28,7 @@ public class Card implements Comparable {
 		return eSuit;
 	}
 
-	public void seteSuit(eSuit suit) {
+	private void seteSuit(eSuit suit) {
 		this.eSuit = suit;
 	}
 

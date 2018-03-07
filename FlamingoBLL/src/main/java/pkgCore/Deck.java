@@ -1,6 +1,7 @@
 package pkgCore;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import pkgEnum.eRank;
 import pkgEnum.eSuit;
@@ -17,7 +18,7 @@ public class Deck {
 	
 	//			Deck(2) will create an array of 104 cards.
 	
-	private void Deck(int num_of_decks) {
+	public void Deck(int num_of_decks) {
 		for(;num_of_decks > 0; num_of_decks--) {
 			Card AoS = new Card(eRank.ACE, eSuit.SPADES);
 			cards.add(AoS);
@@ -136,12 +137,15 @@ public class Deck {
 			Card OoC = new Card(eRank.ONE, eSuit.CLUBS);
 			cards.add(OoC);
 		}
+		Collections.shuffle(cards);
 	}
 	//	TODO: Add a draw() method that will take a card from the deck and
 	//			return it to the caller
 
-	public Card draw() {
-		int rand_card = (int)(Math.random()*(cards.size()));
-		return cards.get(rand_card);
+	public Card draw() throws Exception {
+		if(cards.size()==0) {
+			throw new Exception("Empty Deck");
+		}
+		return cards.remove(0);
 	}
 }
